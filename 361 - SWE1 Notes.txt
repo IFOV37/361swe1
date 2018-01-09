@@ -1,0 +1,39 @@
+361 - Software Engineering 1 notes
+
+Week 1
+===========================================================================================
+
+SDLC - requirements -> design -> implementation -> testing -> maintenance
+
+Software engineering is solving real world problems without making things worse or excessive costs by creating software
+
+Software is not enough -> need people and context
+
+System Boundary: software being developed
+
+Great software has quality attributes:
+	-> reliability
+	-> efficiency
+	-> integrity
+	-> usability
+	-> maintainability
+	-> testability
+	-> flexibility
+	-> portability
+	-> reusability
+	-> interoperability
+
+	contains the right features for the right data:
+
+		-> use cases - the activities a system supports
+			e.g. tweet a vote reort, view delays on map
+
+		-> entities - the kinds of objects that are involved in use cases
+			e.g. tweets, user accounts, polling locations, maps
+
+		-> attributes - the props of the netities
+			e.g. tweets have: timestamp, text, sender
+
+	* Need to understand what it should do before you can build a great system *
+
+	
