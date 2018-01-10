@@ -13,15 +13,59 @@ System Boundary: software being developed
 
 Great software has quality attributes:
 	-> reliability
+		-> consistency
+		-> accuracy
+		-> error tolerance
+
 	-> efficiency
+		-> execution efficiency
+		-> storage efficiency
+
 	-> integrity
+		-> access control
+		-> access audit
+
 	-> usability
+		-> operability
+		-> training
+		-> communicativeness
+
 	-> maintainability
+		-> simplicity
+		-> conciseness
+		-> instrumentation
+		-> self-descriptiveness
+
 	-> testability
+		-> simplicity
+		-> instrumentation
+		-> self-descriptiveness
+		-> modularity
+
 	-> flexibility
+		-> simplicity
+		-> expandability
+		-> generality
+		-> modularity
+
 	-> portability
+		-> simplicity
+		-> software system independence
+		-> machine independence
+
+
 	-> reusability
+		-> simplicity
+		-> generality
+		-> modularity
+		-> software system independence
+		-> machine independence
+
 	-> interoperability
+		-> modularity
+		-> communications commonality
+		-> data commonality
+
 
 	contains the right features for the right data:
 
@@ -37,3 +81,153 @@ Great software has quality attributes:
 	* Need to understand what it should do before you can build a great system *
 
 	
+
+	Process: well defined and usually involves a set of tools and techniques
+		-> set of ordered tasks
+
+		SDLC:
+			requirements
+			design
+			implementation
+			testing
+			operation
+
+			Implied planning and risk mgmt
+
+	Life-cycle: the process of building a product
+
+	Requirements:
+		-> talk to customers
+		-> diagrams
+		-> watch users, etc..
+
+
+	Design:
+		Architectural: Figuring out the overall STRUCTURE of the system
+			-> what components?
+			-> how should these be connected?
+
+		Program: Figuring out how CODE should be organized
+			-> how should each component's code be distributed among classes and/or functions
+
+
+	Implementation:
+		-> write code
+		-> comments/other doc
+		-> helping others/answering questions
+
+	Testing:
+		-> unit testing
+			-> individual components
+
+		-> system integration testing
+			-> components that work well together
+
+		-> usability testing
+			-> good user interfaces
+
+		-> acceptance testing
+			-> customer/user happy?
+
+	Operation:
+		-> code complies, passes all test, looks good on desktop
+		-> distrobution
+		-> debugging after users
+		-> post mortem
+
+
+	-> iterative improvements
+		-> whole system working pretty well then add features
+
+	-> incremental improvements
+		-> part of system working really well then add more parts
+
+Waterfall:
+	requirements analysis
+	design
+	implementation
+	testing
+	op/maint
+
+	drawbacks:
+		-> non-iterative: hard to handle changes
+
+	-> moved more to a spiral kind of model now to address issues
+
+	emphasis:
+		-> simplicity
+		-> traceability
+
+	weakness:
+		-> req/design mistakces costly
+
+	style: 
+		-> highly controlled
+		-> high ceremony
+
+	Good choice for small systems
+		-> fully understand reqs
+
+
+Spiral:
+
+	emphasis:
+		-> risk mgmt
+		-> exploring alternatives
+
+	weakness:
+		-> exploring alternatives can be costly
+
+	style: 
+		-> moderately controlled
+		-> moderate ceremony
+
+	Good choice for larger systems with vague reqs
+		-> many alternatives for designing and coding
+
+
+Agile:
+	-> customer provies info
+	-> "spike" eval and control risk
+	-> prioritize stories and plan
+	-> write/run/mod unit tests
+	-> implement
+	-> sys and acceptance tests
+	-> operation
+	-> start again
+
+
+	Methods/Examples:
+		Extreme Programming (XP): focus on simplicity and rapid iteration
+
+		Scrum: 30-day iterations
+			-> multiple self-organizing teams
+			-> daily "scrum" coordination
+
+		Crystal: collection of approaches based on the notion that every project needs
+				a unique set of policies and conventions
+
+
+	emphasis:
+		-> flexibility
+		-> immediacy
+
+	weakness:
+		-> continual rework can be costly
+
+	style: 
+		-> rapid and organic
+		-> low ceremony
+
+	Good for rapidly create something very small, but useful, then expand
+
+
+
+
+
+
+
+
+
+
+
