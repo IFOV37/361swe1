@@ -231,3 +231,84 @@ Agile:
 
 
 
+
+
+
+Week 3
+--------------------------------------------------------------------------
+
+Lecture 1: Requirements
+-----------------------------------------------
+
+Requiremenet analysis
+	-> get customers to write down what they want
+	-> talk and make diagrams
+	-> watch users to see what they need
+	-> gather and discuss
+
+
+Good requirements:
+	-> correct
+	-> consistent
+	-> unambiguous
+	-> complete
+	-> relevant
+	-> testable
+	-> traceable
+
+
+Typical parts of reqs docs:
+
+	Functional reqs:
+		-> unstructured text
+			written from:
+				-> external viewpoint (reqs def)
+					definition: stated from vpt of somebody outside the system
+						-> the system is a black box with some interface
+						-> emphasis on the role of the system
+
+				-> system viewpoint (reqs specification)
+					specification: stated vpt from somebody inside the system
+						-> environment is accessed via inputs & outputs
+						-> emphasis on how the system works
+
+		-> use cases
+
+
+	Non-Functional (quality) reqs:
+		-> unstructured text
+			-> fit criteria
+
+	Diagrams
+		-> Class diagrams and entity relationship diagrams
+		-> dataflow, sequence, and state diagrams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
