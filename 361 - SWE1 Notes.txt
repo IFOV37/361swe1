@@ -223,12 +223,28 @@ Agile:
 
 
 
+Week 2
+--------------------------------------------------------------------------
+
+Lecture 2.1: Project  (only 1 video this week)
+-----------------------------------------------
 
 
+Project will use methods:
+
+	Waterfall model to dev reqs and preliminary design
+
+	last 2 weeks will transition to spiral model to code part of the design
 
 
+Need to know:
+	-> Know the waterfall process
+	-> Understand the assignment
+	-> Divide the work among your teamates
+	-> Make sure everyone is doing their part
+	-> Check one another's work
 
-
+Divide responsibilities
 
 
 
@@ -237,7 +253,7 @@ Agile:
 Week 3
 --------------------------------------------------------------------------
 
-Lecture 1: Requirements
+Lecture 3.1: Requirements
 -----------------------------------------------
 
 Requiremenet analysis
@@ -273,35 +289,185 @@ Typical parts of reqs docs:
 						-> emphasis on how the system works
 
 		-> use cases
+			-> describes activity supported by the system
+				-> each use case describes a way to use the system
+			-> each use case is like a "bundle of scenarios" that are all
+				the same except for very minor details
+			-> a little more formal and precise than unstructure text
+
+Use case: (basic)
+
+	name: succint and meaningful
+
+	actor: who does the act
+
+	preconditions: true b4 act?
+
+	post cond: true after act?
+
+	flow of events: steps
 
 
-	Non-Functional (quality) reqs:
+
+
+	Non-Functional (quality) reqs:  How well the system should do stuff
 		-> unstructured text
 			-> fit criteria
+				-> exactly how good does the system need to be?
+				-> driven by customer needs
+
+
+				quality attribute examples:
+					-> system must ask for tweet clarification w/in 5 mins
+						-> user probably still online
+
+					-> drawbridge must rise w/in 1min
+						-> so traffic only stops 5 mins (1+1 + 3ship)
+
+					-> at least 95% of the code must be Java
+						-> porting apps to linux has proven to cost only $xxxx in the past
 
 	Diagrams
 		-> Class diagrams and entity relationship diagrams
 		-> dataflow, sequence, and state diagrams
 
+		use case diagram: shows supported activites
+
+		UML class and entity-relationship diagrams: show entites, attributes, and relationships
+
+		dataflow diagram: shows flo of information
+
+		message sequence diagram: shows flow of control
+
+		state chart: shows change over time
+
+
+
+Lecture 3.2: Notations
+-----------------------------------------------
+
+
+	Diagrams
+		-> Class diagrams and entity relationship diagrams
+		-> dataflow, sequence, and state diagrams
+
+		use case diagram: shows supported activites
+
+		UML class and entity-relationship diagrams: show entites, attributes, and relationships
+
+		UML class diag:
+			User has twitter username
+			repression tweet has user, when (datetime), and text (string)
+			repression report has source (tweet) location (geocode) when (datetime), and details (string)
+			etc...  Also has 1 to *, 1 to 1, * to *, etc.. 
+				-> can show system boundaries via "container"
+
+			-> 1 box / kind of entity, listing attributes
+
+			-> lines w/out arrowheads show references, lbl'd w/ cardinality
+
+			-> lines w/ hollow arrowheads for specilization
+
+			-> lines w/ reg ah's use to indicate dependencies
+
+		ERD:
+			-> similar to UML, but:
+				-> branches for entites
+				-> diamond for relationships
+				-> num or vars on lines show cardinality
+				-> one box per kind of entity
+
+
+		dataflow diagram: shows flow of information
+
+			-> like a flowchart but not necessarily in a top down order
+			-> lacks some info where things go
+
+			-> helps to do a separate data flow for each use case
+
+			-> oval is a "function" provided by system
+				-> each inward arrow is a parm
+				-> outward arrow is output
+
+
+			-> each rectangle is an actor
+				-> person, place, or thing that can do stuff to ini events
+
+			-> half rectangle = data store (file or db)
+
+
+		message sequence diagram: shows flow of control
+			-> kind of likc job scheduling or a burndown chart
+
+			-> dashed arrow for info back
+
+		state chart: shows change over time
+			-> general and a very basic idea of the status
+
+
+
+Lecture 3.3: Example Requirements
+-----------------------------------------------
+
+Nothing
 
 
 
 
+Lecture 3.4: Evaluate/ion Requirements
+-----------------------------------------------
+
+Validation: build the right system
+	-> reqs def accurately reflect the customers needs?
+
+Verification: build the system tright
+	-> confirm that 1 doc or artifact conforms to another
+		-> does code match design?
+		-> design match spec?
+		-> spec match def?
 
 
 
+	How do we eval reqs?
+		-> paper prototyping
+		-> formal analysis
+		etc..
 
 
 
+	Prototyping:
+		-> you depict what you think the system should look like
+		-> you test the prototypes
+		-> fix up the prototypes
+
+		kinds/types:
+			fidelity = fi = closeness to what the ultimate product would look like
+
+			throwaway
+				-> paper, lo-fi (photoshopped)
+							-> photoshop, ppt, html
+
+			evolutionary
+				-> hi-fi (implemented on target platform)
+					-> not fully functional, but incop'd into final product
+					-> 
 
 
+			stakeholder review
+				-> sit down with s/hs
+				-> eng present understanding
+				-> stake correct undstng
+				-> discuss
+				-> revision
 
+			Manual analysis
+				->systematically check consistency
 
-
-
-
-
-
+			formal analysis
+				-> the one we are doing for hwk 1
+					(req def, req spec)
+				-> very expensive
+				
 
 
 
