@@ -472,6 +472,185 @@ Verification: build the system tright
 
 
 
+Week 4
+--------------------------------------------------------------------------
+
+Lecture 4.1: Architecture
+-----------------------------------------------
+
+	-> shows pieces of a system and their relationships
+
+
+component: self-containted piece of a system, w/ clearly defined interfaces
+
+connector = a linkage b/w components via an interface
+
+
+Architectural Style
+	-> cerain archs occur over and over
+		-> certain kinds of comps and conns
+		-> certain typical arrangements
+
+
+
+	user <-> website <-> db1
+				|
+				db2
+
+		-> could be just about any web app
+
+Common design:
+
+Client-Server:
+	
+	Server = component that provices services
+	Client = comp that interacts with user and calls server
+
+	Typical setup:  user <-> client <-> server
+
+Peer to peer:
+
+	peer = comp provices svrs and may signal other peers
+
+Publish-Subscribe:
+
+	publish = comp advertses that it can sent certain events
+
+	subscribe = a comp registers to rec certain events
+
+
+
+pipe and filter:
+	filter = comp that transforms data
+
+	pipe = con that passes data b/w filters
+
+
+Layering = comp provices svrcs to the next layer
+	-> comps "hide" lower layers
+
+
+
+
+
+Lecture 4.2: Architecture Decomposition
+-----------------------------------------------
+
+Decomposition: providing a detailed view of a component
+
+
+Approaches for decomposing an arch:
+	-> functional
+			break req into fns, then break recursively into sub fns
+				-> one comp per fn
+
+			each fn computationally combines the output of sub fns
+
+	-> data-oriented
+			identify data structs in reqs break down recursively
+				-> one comp per d/s
+
+			each data s contains part of the data
+
+	-> object-oriented
+			identify d/s aligned w/ fns in reqs, recursive breakdown
+				-> one class comp per data + fn package
+
+			each comp contains part of the data+fns
+
+	-> process-oriented
+			break reqs into steps, then into sub steps recursively
+				-> 1 cmp per sub step
+
+			each sub step completes one part of a task
+
+	-> feature-oriented
+			break reqs into services, then svrcs into features
+				-> 1 cmp per service or feature
+
+			each feature makes the service "a little better"
+
+	-> event-oriented
+			break reqs into systems of events, then into sub events and state changes
+				-> each comp receives and sends certain events,
+				and manages certain state changes
+
+			each component is like a stateful agent
+
+
+
+
+Lecture 4.2: Architecture Evaluation
+-----------------------------------------------
+
+4 basic ways to eval arch designs
+
+	1) compare against desired quality attributes
+		maintainability
+			-> how hard will it be to make anticipated changes?
+
+		efficiency
+			-> can system respond quickly?
+
+		reliability
+			-> will it perform properly under assumed conditions?
+
+		integrity
+			-> possible to put system in bad state?
+
+		usability
+			-> can real users complete their gaosl with the system?
+
+		testability
+			-> can you (semi-)auto test if the system is right?
+
+		flexibility
+			-> how easily can the system adapt to unusual conditions?
+
+		portability
+			-> could you get the system to run on a new platform?
+
+		reusability
+			-> what parts of the system could you use in a new system?
+
+		interoperability
+			-> can the sysm talk to other relevant systems?
+
+			
+	2) check for problematic failure modes
+
+	3) Walk through use cases
+
+	4) Verify conformatnce to checklist of principles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
