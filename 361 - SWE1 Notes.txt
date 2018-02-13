@@ -627,6 +627,62 @@ Lecture 4.2: Architecture Evaluation
 
 
 
+Week 6
+--------------------------------------------------------------------------
+
+Lecture 6.1: Object-Oriented Design
+-----------------------------------------------
+
+Objects have a concern in the sense that they have a purpose
+
+Each class should have a clearly focused purpose
+	-> each member usually corresponsd to 1 attribute
+	-> only related items w/in class
+
+	i) same for packages
+
+
+copuling: when one module is involved in anothers modules concern
+	-> reduces maintainability
+
+cohesion: when a module is devoted to its concern
+	-> increases maintainability
+		i) functional (best)
+			->work together for 1 purpose
+		ii) communication
+			-> use same data
+		iii) procedural
+			-> A, then B, vaguely related purpose
+		iv) temporal
+			-> A, then B, not related purpose
+		v) logical
+			-> either A or B might be executed
+		vi) coincidental (worst)
+
+tip: split modules to reduce cycles
+
+tip: in reuse, prefer composition over inheritance
+	-> in general, use comp to add features or to reuse code
+	-> inheritance to add a new version of an entity
+
+Interface is a promise
+	-> publicly available information of the class
+
+incremental dev: much of systems value resides in one subsection
+
+iterative dev: value spread out over much of the system
+
+
+
+
+
+
+
+Use UML diagrams
+	-> one box per kind of entity
+	-> lines w/o arrowheads show refs
+	-> lines w/ open ah's for specialization
+	-> lines w/ reg ah's indicate dependencies
 
 
 
