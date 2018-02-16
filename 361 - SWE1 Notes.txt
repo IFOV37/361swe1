@@ -686,6 +686,57 @@ Use UML diagrams
 
 
 
+Lecture 6.2: Design Patterns
+-----------------------------------------------
+	-> strategies for your "toolkit of ideas"
+	-> templates for solutions
+	-> codified best practices
+	-> recognizable based on structure and purpose
+
+
+Builder: knows how to create a complex obj
+	-> insatntiating requires filling it with parts or lengthy config
+
+Adapter: translates one interface to another by wrapping
+	-> overcomes incompatibility
+
+Facade: object that provices a unified, high lvl interface to a subsystem
+	-> used when calling a subsys reqs a frequent series of copmlex lines of code
+
+Memento: encapsulate state in an obj
+	-> if you might want to rtn a certain state later	
+
+Interpreter: parses and acts on instructions written in a certain syntax
+	-> add scriptability
+
+Observer: watching for another object to change state
+	-> maintains a list of observers and notifies them
+	-> used in event driven design
+
+
+
+
+
+Lecture 6.3: Design Patterns 2
+-----------------------------------------------
+
+Template method: breaks an algorithm into steps
+	-> children inherit and override any step they need to change
+	-> useful if a gen algo can be mod'd slightly and reused
+
+Factory method: define an interface for creating an obj
+	-> let the classes that implement the interface decide which class to instantiate
+	-> lets a class defer instantiation to sub classes
+
+Strategy: allows for the selection of algo at runtime
+
+Decorator: useful for assigning behavior at runtime indply of other instances of the same class
+	-> allows multiple decorations per class
+
+Composite: allows for reduction of complexity by dealing with a group of objs as a single obj
+
+Visitor: allows for separation of the algo and the data it works on
+	-> built on method overloading and dynamic types
 
 
 
@@ -699,10 +750,9 @@ Use UML diagrams
 
 
 
+hwk 4 contribs:
 
-
-
-
+Contributed the selections for interfaces we want to show.  Provided the information that our design is incremental until the underlying structure is complete, then we switch to iterative development.
 
 
 
