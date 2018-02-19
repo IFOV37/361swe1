@@ -630,7 +630,7 @@ Lecture 4.2: Architecture Evaluation
 Week 6
 --------------------------------------------------------------------------
 
-Lecture 6.1: Object-Oriented Design
+Lecture 5.1: Object-Oriented Design
 -----------------------------------------------
 
 Objects have a concern in the sense that they have a purpose
@@ -686,7 +686,7 @@ Use UML diagrams
 
 
 
-Lecture 6.2: Design Patterns
+Lecture 5.2: Design Patterns
 -----------------------------------------------
 	-> strategies for your "toolkit of ideas"
 	-> templates for solutions
@@ -717,7 +717,7 @@ Observer: watching for another object to change state
 
 
 
-Lecture 6.3: Design Patterns 2
+Lecture 5.3: Design Patterns 2
 -----------------------------------------------
 
 Template method: breaks an algorithm into steps
@@ -742,17 +742,51 @@ Visitor: allows for separation of the algo and the data it works on
 
 
 
-
-
-
-
-
-
-
-
 hwk 4 contribs:
 
 Contributed the selections for interfaces we want to show.  Provided the information that our design is incremental until the underlying structure is complete, then we switch to iterative development.
+
+
+Head First Design Patterns Notes:
+
+
+
+Week 7
+--------------------------------------------------------------------------
+
+Lecture 6.1: Agile Overview
+-----------------------------------------------
+
+
+
+
+
+
+
+Lecture 6.2: Customer Collaboration
+-----------------------------------------------
+
+
+
+
+
+Lecture 6.3: Individual Interactions
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
