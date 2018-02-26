@@ -757,8 +757,66 @@ Week 7
 Lecture 6.1: Agile Overview
 -----------------------------------------------
 
+Several processes
+	-> Dyanmic Systems Development Method (DSDM)
+	-> Scrum
+	-> Crystal
+	-> eXtreme Programming (XP)
+
+Agile = flexibility and immediacy
+	-> rapid and organic
+	-> good choice for systems where rapidly create something small, but useful, then expand from there
 
 
+Agile Manifesto
+	-> individuals and interactions over processes and tools
+	-> working software over comprehensive docs
+	-> customer collab over contract negotiation
+	-> responding to change over following a plan
+
+Process:
+	1) 	customer provides short reqs
+	2) 	eval and ctrl risk
+	3) 	prioritize reqs and plan
+	4) 	write/run mod unit tests
+	5) 	implement (with possible rtn to stp 4)
+	6) 	system and acceptance tests
+	7) 	operation
+
+Iterations:
+	purpose: few small issues rather than a large OMG at end
+	timing: sprint 1 month
+			xp 1-2 wks
+
+	grouping: not ever iter results into releases
+	sub-dividing: each iter has micro iters where team tries to complete some stories
+
+
+Principles of XP:
+	-> comm b/w customer and devs
+	-> simplicity and grow when required
+	-> feedback from users early and often
+	-> courage to speak truth w/ respect
+
+
+	XP practices : role of the customer
+		-> whole team, customer part of team
+		-> cusotmer tests, participates in testing
+		-> sustainable pace, no all nighters or superheroes
+		-> small releases
+		-> simple design
+		-> refactor as needed
+		-> continuous integration, reg chk to see if sys on track
+
+	: roll of teamwork
+		-> pair programming, aka co pilot and swap
+		-> test driven dev (tests 1st)
+		-> collective code ownership, one ego for the whole team
+		-> coding standards, pick a format and use it
+
+XP can degrade into a hacker's paradise
+Knowledge lives in heads, not on paper
+No specialization
 
 
 
@@ -766,6 +824,33 @@ Lecture 6.1: Agile Overview
 Lecture 6.2: Customer Collaboration
 -----------------------------------------------
 
+Customer is part of the team - even directing the team
+
+	User stories fits on 3x5 note card, to keep in small and simple (minimalist)
+		-> not written in stone, revision expected
+		-> further comm usually needed
+
+	Collect user story
+	Identify tasks
+		-> often helps to sketch arch
+
+	Estimate effort
+		-> give honest estimate and sustainable pace
+
+		Spikes
+			purpose = discover answer to difficult problems (either design or implementation)
+				-> small pgm to explore and test possible solutions
+
+	Prioritize stores: (done by customer - making business decisions)
+		-> engineers get to make tech decisions
+
+	Plan work
+		-> chosen stories, teammates get organized, figure out pairs (if using)
+
+	Communicate Progres
+		-> track effort
+		-> communicate early
+		-> release dates don't slip, functionality slips
 
 
 
@@ -773,8 +858,74 @@ Lecture 6.2: Customer Collaboration
 Lecture 6.3: Individual Interactions
 -----------------------------------------------
 
+Acceptance Tests and User Stories
+	-> each story may have multiple acceptance tests
+	-> a single test validates an aspect of the story
+	-> tell what the customer will use to judge success
+	-> you know when you can stop developing (since the test was passed)
+
+	Creating the tests:
+		-> ideally, customer writes
+		-> blackbox tests
+		-> unambiguous
+	-> run at least once a week
+	-> useful to have integration machine where you can run tests
+
+	-> exhaustive testing usually infeasible
+		-> so use representative testing
+			-> typical inputs
+			-> boundary cases
+
+Pair programming:
+	Driver:
+		-> ctrls keyboard and mouse
+		-> actively talking with copilot
+		-> explains intent of code
+
+	copilot:
+		-> pays attention, watches for mistakes
+		-> offers ideas
+		-> discus course of action
+		-> requests to switch when necessary
 
 
+	-> if someone asks, you must say yes, if you can
+	-> pick a std format
+	-> choose large enough font to be seen
+	-> take turns with other ppl
+
+Agile Modeling:
+	model iteratively and incrementally
+	don't let them distract you from the "hunt"
+	model w/ other ppl
+	create simple content
+	use simple tools
+
+
+
+
+Week 8
+--------------------------------------------------------------------------
+
+Lecture 7.1: Effort Overview
+-----------------------------------------------
+
+
+
+
+Lecture 7.2: Schedule
+-----------------------------------------------
+
+
+
+
+Lecture 7.3: Testing
+-----------------------------------------------
+
+
+
+Lecture 7.4: Refactoring
+-----------------------------------------------
 
 
 
