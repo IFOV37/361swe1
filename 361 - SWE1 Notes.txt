@@ -910,17 +910,89 @@ Week 8
 Lecture 7.1: Effort Overview
 -----------------------------------------------
 
+Planning big projects:
+	1) figuure what it entails
+		-> reqs, arch, design
+	2) dependencies & priorities
+		-> what has to be done in what order?
+	3) how much effort?
+	4) plan, refine, plan, refine...
 
+activity graph shows dependencies
+	-> start and end circle filled in  (am I really writing this garbage?)
+	-> 1 circle/milestone
+	-> lbl'd arrows = activities
+
+Effort: records of similar tasks
+	-> Personal software process (psp)
+		-> record size of component (lines of code)
+			-> break down by # added, reused, etc..
+		-> record time taken
+			-> breakdown planning, design, implement, etc..
+		-> refer to data for future predictions
+
+	est models
+		algorithmic (cocomo)
+			-> inputs = desc of prj + team
+			=> outputs = est of eff req'd
+
+		machine learning (cbr)
+			-> gather descs of old prjs + time taken
+			-> run a pgm to create model
 
 
 Lecture 7.2: Schedule
 -----------------------------------------------
 
+Critical path: longets route through the activity graph
+	-> sort all milestones in "topological order"
+		-> i.e. in terms of dependencies.
+
+	-> for each milestone, compute the earliest that the milestone can be reached from its immediate depenecies
+
+
+Slack time
+
+	activity slack = latest possible start time - earliest possible start time
+		-> how "spare time" that activity has (in case something goes wrong)
+		-> activities on critical path have ZERO slack time
+
+
+Gantt chart
+	shows acts on calender
+		-> useful for visualizing ordering of tasks and slack
+		-> for deciding how many ppl to hire
+
+	one bar/activity
 
 
 
 Lecture 7.3: Testing
 -----------------------------------------------
+
+Why test?
+	-> saves lives and money
+
+	Coverage : measures or metrics
+		-> abstraction of "what a test suite tests" in a structural sense
+
+		common measures:
+			statement cov : line/basic block - which statements exe in test suite
+			decision cov : whih bool exprs in ctrl structures evalt to T and F during exe
+			path cov : which paths through pgm ctrl flow are taken
+			mutation cov : ability to detect random vars to the code
+
+	black box testing
+		-> treat system as black box
+			-> don't look at source code
+
+
+	white box testing
+		-> opens box
+			-> also glass box or structural testing
+		-> use src code (or other structure beyond i/o spec) to design test cases
+
+		
 
 
 
