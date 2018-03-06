@@ -993,6 +993,45 @@ Why test?
 		-> use src code (or other structure beyond i/o spec) to design test cases
 
 		
+stages:
+	1)	unit testing - by devs of modules
+		-> earliest type done
+		-> small as single fn or method
+		-> tools to support available for most popular languages
+
+	2) 	integration testing - combines unit tested mods and tests how they interact
+		-> combines unit tested modules to test interaction
+		-> focus on interfaces b/w components and assemblies of multiple comps
+		-> often more formal
+
+	3) 	system testing (whole program)
+		-> focuses on breaking the system
+		-> defects in completed product, not just in how components interact
+		-> checks quality of reqs as well as the system
+		-> often includes stress testing, goes beyond bounds of well-defined behavior
+
+	4) 	acceptance testing
+		-> black box
+		-> done by end users
+
+	5) bonus: all times : regression testing
+		-> changes can break code or reintroduce old bugs
+		-> usually a set of cases that have failed (and then succeded) in the past
+		-> finding small regressions is an ongoing research area
+
+
+Test Driven development
+	-> 1 way to make sure code is tested as early as possible:
+		write test cases b4 code
+			-> often used in XP (agile)
+
+	How do we add a feature to pgm?
+		-> add test case that fails, but would succeed w/ new feature implemented
+		-> run all tests, make sure only the new test fails
+		-> write code to implement the new feature
+		-> rerun all tests, amking sure the new test succeeds (and no others break)
+
+		
 
 
 
